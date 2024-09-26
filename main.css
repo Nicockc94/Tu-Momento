@@ -1,0 +1,42 @@
+/*ARCHIVO PRINCIPAL DE SCSS */
+/*Importacion de scss Pages*/
+/*Importacion de Utilidades*/
+/*Variable de colores*/
+/*variable  fuentes*/
+body {
+  background-color: #EBE8E3;
+  color: 0; }
+
+.header_contein_home {
+  border-top: 2px solid #2C3E50;
+  margin-top: 3px; }
+
+.h1_home {
+  font-family: "Great Vibes", cursive;
+  text-align: center;
+  font-size: 50px;
+  animation: fadeIn 2s ease-in forwards;
+  /* Aparece en 2 segundos */
+  opacity: 0; }
+
+.logo_home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px; }
+  .logo_home img {
+    display: flex;
+    width: 100%;
+    min-width: 250px;
+    max-width: 350px;
+    border-radius: 20px;
+    opacity: 0;
+    /* Comienza invisible */
+    animation: fadeIn 2s ease-in forwards;
+    /* Aparece en 2 segundos */
+    box-shadow: 0 10px 20px #2C3E50; }
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    /* Termina completamente visible */ } }

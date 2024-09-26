@@ -1,0 +1,57 @@
+/*Importacion de Utilidades*/
+@import 'variables';
+
+
+body{
+    background-color: $background-color;
+    color: red($color: #000000);
+}
+
+
+
+
+.header_contein_home{
+
+    border-top: 2px solid  $color-bordes;
+    margin-top: 3px;
+
+}
+
+
+
+.h1_home{
+    font-family: $fuente;
+    text-align: center;
+    font-size: 50px;
+    animation: fadeIn 2s ease-in forwards; /* Aparece en 2 segundos */ 
+    opacity: 0;
+}
+
+.logo_home{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+   
+  
+    img{
+        display: flex;
+        width: 100%;
+        min-width: 250px;
+        max-width: 350px;
+        border-radius: 20px;
+        opacity: 0; /* Comienza invisible */
+        animation: fadeIn 2s ease-in forwards; /* Aparece en 2 segundos */ 
+        box-shadow: 0 10px 20px $color-bordes;
+    }
+}
+
+
+@keyframes fadeIn {
+    to {
+      opacity: 1; /* Termina completamente visible */
+    }
+  }
+
+
