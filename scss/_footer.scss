@@ -1,0 +1,45 @@
+@import 'variables';
+
+
+
+footer {
+    background-color: $background-color;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid $color-bordes;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+    font-family: $fuente_2;
+  }
+  
+  .footer-section h2 {
+    font-size: 1.2em;
+    color: $color-text;
+    font-family: $fuente_2;
+  }
+  
+  .footer-section ul {
+    list-style-type: none; /* Sin viñetas en la lista */
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    font-family: $fuente_2;
+    margin: 5px 0;
+    color: $color-text;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+    font-family: $fuente_2;
+  }

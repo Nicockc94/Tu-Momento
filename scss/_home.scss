@@ -12,7 +12,7 @@ body{
 
 .header_contein_home{
 
-    border-top: 2px solid  $color-bordes;
+    
     margin-top: 3px;
 
 }
@@ -22,9 +22,19 @@ body{
 .h1_home{
     font-family: $fuente;
     text-align: center;
-    font-size: 50px;
+    font-weight: lighter;
+    font-size: 65px;
     animation: fadeIn 2s ease-in forwards; /* Aparece en 2 segundos */ 
     opacity: 0;
+    font-weight: lighter;
+}
+
+.h2_home{
+text-align: center;
+font-family: $fuente_2;
+margin-top: 10px;
+color: $color-text;
+font-weight: lighter;
 }
 
 .logo_home{
@@ -47,6 +57,72 @@ body{
     }
 }
 
+
+.box_general{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    padding: 5px;
+}
+.img_section_general{
+width: 296px;
+top: -75px;
+position: relative;
+
+}
+.box_img_section{
+   height: 200px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    animation: fadeIn 2s ease-in forwards; /* Aparece en 2 segundos */ 
+    box-shadow: 0 5px 10px $color-bordes;
+   
+    
+  
+}
+
+section{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.a_section {
+    font-family: $fuente_2;
+    text-decoration:none;
+    font-size: 25px;
+    width: 250px;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.box_enlace{
+    display:flex;
+    flex-direction: row;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    img{
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+    }
+}
+
+a:link{
+    color: $color-text;
+}
+
+a:active{
+    color: $color-text;  
+}
+
+a:visited{
+    color: $color-text;
+}
 
 @keyframes fadeIn {
     to {

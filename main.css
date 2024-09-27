@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*ARCHIVO PRINCIPAL DE SCSS */
 /*Importacion de scss Pages*/
 /*Importacion de Utilidades*/
@@ -8,22 +9,30 @@ body {
   color: 0; }
 
 .header_contein_home {
-  border-top: 2px solid #2C3E50;
   margin-top: 3px; }
 
 .h1_home {
   font-family: "Great Vibes", cursive;
   text-align: center;
-  font-size: 50px;
+  font-weight: lighter;
+  font-size: 65px;
   animation: fadeIn 2s ease-in forwards;
   /* Aparece en 2 segundos */
-  opacity: 0; }
+  opacity: 0;
+  font-weight: lighter; }
+
+.h2_home {
+  text-align: center;
+  font-family: "Belleza", sans-serif;
+  margin-top: 10px;
+  color: #3C3A37;
+  font-weight: lighter; }
 
 .logo_home {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5px; }
+  padding: 10px; }
   .logo_home img {
     display: flex;
     width: 100%;
@@ -36,7 +45,101 @@ body {
     /* Aparece en 2 segundos */
     box-shadow: 0 10px 20px #2C3E50; }
 
+.box_general {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  padding: 5px; }
+
+.img_section_general {
+  width: 296px;
+  top: -75px;
+  position: relative; }
+
+.box_img_section {
+  height: 200px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  animation: fadeIn 2s ease-in forwards;
+  /* Aparece en 2 segundos */
+  box-shadow: 0 5px 10px #2C3E50; }
+
+section {
+  margin-top: 40px;
+  margin-bottom: 20px; }
+
+.a_section {
+  font-family: "Belleza", sans-serif;
+  text-decoration: none;
+  font-size: 25px;
+  width: 250px;
+  align-items: center;
+  margin-top: 10px;
+  margin-left: 10px; }
+
+.box_enlace {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  justify-content: center;
+  align-items: center; }
+  .box_enlace img {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%; }
+
+a:link {
+  color: #3C3A37; }
+
+a:active {
+  color: #3C3A37; }
+
+a:visited {
+  color: #3C3A37; }
+
 @keyframes fadeIn {
   to {
     opacity: 1;
     /* Termina completamente visible */ } }
+
+/*Variable de colores*/
+/*variable  fuentes*/
+footer {
+  background-color: #EBE8E3;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid #2C3E50; }
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  font-family: "Belleza", sans-serif; }
+
+.footer-section h2 {
+  font-size: 1.2em;
+  color: #3C3A37;
+  font-family: "Belleza", sans-serif; }
+
+.footer-section ul {
+  list-style-type: none;
+  /* Sin viñetas en la lista */
+  padding: 0; }
+
+.footer-section ul li {
+  font-family: "Belleza", sans-serif;
+  margin: 5px 0;
+  color: #3C3A37; }
+
+.footer-bottom {
+  margin-top: 20px;
+  font-size: 0.9em;
+  font-family: "Belleza", sans-serif; }
